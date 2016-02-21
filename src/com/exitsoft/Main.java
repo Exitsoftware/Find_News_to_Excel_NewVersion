@@ -27,6 +27,9 @@ public class Main {
     public static List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 
     public static void main(String[] args) {
+        Frame frame = new Frame();
+
+
         Scanner s = new Scanner(System.in);
         System.out.println("검색어를 입력해주세요");
         query = s.next();
@@ -42,7 +45,7 @@ public class Main {
 
 
         try {
-            for(int i = 0; i < 1; i++){
+            for(int i = 0; i < 100; i++){
                 String real_url = url + query + data;
 //                real_url = "https://search.naver.com/search.naver?ie=utf8&where=news&query=%ED%95%9C%EC%96%91%EB%8C%80&sm=tab_pge&sort=2&photo=0&field=0&reporter_article=&pd=3&ds=2015.01.01&de=2016.01.01&docid=&mynews=0&start=11&refresh_start=0";
                 System.out.println(real_url+ String.valueOf(i*10+1) + "&refresh_start=0");
