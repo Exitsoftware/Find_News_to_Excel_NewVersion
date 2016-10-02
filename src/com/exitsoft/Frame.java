@@ -92,7 +92,7 @@ public class Frame extends JFrame{
 
 
                     try {
-                        for(int i = 0; i < 1000; i++){
+                        for(int i = 0; i < 100; i++){
                             String real_url = url + query + data;
 //                real_url = "https://search.naver.com/search.naver?ie=utf8&where=news&query=%ED%95%9C%EC%96%91%EB%8C%80&sm=tab_pge&sort=2&photo=0&field=0&reporter_article=&pd=3&ds=2015.01.01&de=2016.01.01&docid=&mynews=0&start=11&refresh_start=0";
 
@@ -122,10 +122,10 @@ public class Frame extends JFrame{
 //                                System.out.println(date.get(j).text().split(" ")[1]);
                             }
 
-                            try {
-                                Random random = new Random();
-                                Thread.sleep((long)(random.nextDouble()*1000));
-                            } catch (InterruptedException ex) { }
+//                            try {
+//                                Random random = new Random();
+//                                Thread.sleep((long)(random.nextDouble()*1000));
+//                            } catch (InterruptedException ex) { }
 
                             System.out.println("ADD");
                         }
